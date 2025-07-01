@@ -1,4 +1,3 @@
-# Enhanced Linear Regression Model for House Price Prediction
 
 import pandas as pd
 import numpy as np
