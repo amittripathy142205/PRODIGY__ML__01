@@ -1,34 +1,31 @@
-🌍 Global Population Visualization
+🏡 House Price Prediction Using Linear Regression
 
-This project visualizes the **distribution of world population data** using the [World Bank's Total Population dataset](https://data.worldbank.org/indicator/SP.POP.TOTL). It focuses on representing population distribution across countries or over time using **bar charts** and **histograms**, helping to identify trends and compare demographic scales globally.
+This project implements a Linear Regression model to predict house prices based on features such as square footage, number of bedrooms, and bathrooms. The dataset used is from the [Kaggle House Prices - Advanced Regression Techniques](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) competition.
 
-📊 Features
+📌 Project Objective
 
-  * Interactive **bar chart** showing population distribution across selected countries.
-  * Option to filter population data by **year**.
-  * Clean and responsive visualizations using **Matplotlib** / **Seaborn** / **Plotly**.
-  * Customizable for regional, gender-based, or age-group analyses if extended with additional datasets.
+The goal of this project is to understand how basic housing attributes contribute to price estimation and to build a simple, interpretable model for predicting house prices using Linear Regression.
 
-📁 Dataset Source
+📊 Dataset Features Used
 
-  * **World Bank Indicator:** [SP.POP.TOTL - Total Population](https://data.worldbank.org/indicator/SP.POP.TOTL)
-  * Data contains total population figures by country, updated annually.
+ ⦁	GrLivArea (Above ground living area in square feet)
+ ⦁	BedroomAbvGr (Number of bedrooms above ground)
+ ⦁	FullBath and HalfBath (Number of full and half bathrooms)
 
-🛠️ Tech Stack
+🛠️ Project Workflow
 
-  * Python
-  * Pandas
-  * Matplotlib / Seaborn / Plotly
-  * Jupyter Notebook (for exploration & visualization)
+  ⦁	Data Cleaning: Handling missing values and selecting relevant features.
+  ⦁	Exploratory Data Analysis (EDA): Visualizing relationships between variables.
+  ⦁	Feature Engineering: Combining and transforming features.
+  ⦁	Model Building: Training a linear regression model on selected features.
+  ⦁	Model Evaluation: Assessing performance using RMSE and R² score.
 
-🚀 Getting Started
+📈 Results
 
-  1. Clone the repo
-  2. Install dependencies (`pip install -r requirements.txt`)
-  3. Run `population_visualization.ipynb` or `main.py` to generate the charts
+The trained model provides a simple yet interpretable prediction framework for estimating house prices using only a few core features.
 
-📈 Sample Visualizations
+🚀 Future Enhancements
 
-  * Bar chart comparing population of top 10 most populous countries
-  * Histogram showing distribution of country population sizes in a specific year
-
+ ⦁	Use more advanced regression models (Ridge, Lasso, XGBoost).
+ ⦁	Include more features like neighborhood, year built, etc.
+ ⦁	Deploy model using Flask or Streamlit for live predictions.
